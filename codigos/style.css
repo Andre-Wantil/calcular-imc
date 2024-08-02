@@ -5,23 +5,43 @@ body {
   align-items: center;
   font-family: 'Poppins', sans-serif;
   text-align: center;
+  margin: 0;
 }
 
-div {
-  display: flex;
-  justify-content: space-between;
+main {
+  width: 100%;
 }
 
 .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
   background-color: white;
   border-radius: 12px;
-  padding: 16px 24px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.container div input {
+  height: 2rem;
+  width: 11rem;
+  border-radius: 7px;
+  margin-bottom: .6rem;
 }
 
 button {
-  margin-top: 16px;
+  width: 8rem;
+  height: 2rem;
+  margin-top: .6rem;
+  border-radius: 15px;
+  text-align: center;
 }
 
-#resultadoTexto {
+#result {
   font-size: 24px;
+}
+
+section {
+  text-align: center;
 }

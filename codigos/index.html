@@ -15,17 +15,21 @@
       <h1>Desafio: Calculadora de IMC (Índice de Massa Corporal)</h1>
     </header>
     <main>
-      <form id="formulario">
+      <form id="formulario" class="container">
         <div>
-          <!-- input de peso (kg) -->
+          <!-- input de massa (kg) -->
+          <input id="kg" type="number" placeholder="Insira o seu peso aqui"/>
         </div>
         <div>
           <!-- input de altura (m) -->
+          <input id="height" step="0.01" type="number" placeholder="Insira a sua altura aqui"/>
         </div>
         <!-- butão para envio -->
+        <button type="submit" onclick="calcularIMC()">Calcular</button>
       </form>
       <section>
         <!-- onde o resultado aparecerá -->
+        <p id="result">O resultado aparecerá aqui</p>
       </section>
     </main>
 
